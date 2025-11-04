@@ -1,10 +1,9 @@
 
-import os
 from telegram import Update, ReplyKeyboardRemove
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ConversationHandler, ContextTypes
 
 BRAND, MODEL, PRICE_YEN, ENGINE_CC, YEAR = range(5)
-TOKEN = os.getenv("TOKEN")
+TOKEN = "8248943619:AAHF2-sAaKvTRm1KCekMmlVAlY-5ze3rgXk"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Привет! Введите марку авто.")
